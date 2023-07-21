@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<form action="" method="post">
+<body>
+    <header>
+        <img src="./Assets/icon.png.png" style="width: 50px; height: 50;" alt="Logo">
+        <h3>Modernrow Food Site</h3>
+        <nav>
+            <ul>
+            <li> <a href="./tables.html" target="_blank">Tables</a></li>
+            <li> <a href="./forms.html">Buy Here</a></li>
+            <li><a href="#image">Image</a></li>
+            </ul>
+        </nav> 
+    </header><br>
+    <main>
+        <label for="name">(a)What is your name?</label>
+        <input type="text" name="Aplicant Name" id="name" minlength="2" maxlength="50" required><br><br>
+
+        <label for="age">(b)What is your name?</label>
+        <input type="number" name="Aplicant age" id="10" min="2" max="200" required><br><br>
+
+        <input type="email" name="Aplicant email" placeholder="Enter email" required><br><br>
+
+        <label for="password">(c)Enter your token password</label>
+        <input type="password" name="number" id="password"><br><br>
+
+        <label for="hunger_level">(d)How hungry are you</label>
+        <input type="range" name="level" id="hunger_level" min="0" max="10"><br><br>
+
+        <p>(e)What do you want to take for dessert?</p>
+        <label for="jollof">Jollof</label>
+        <input type="checkbox" name="jollof" id="jollof">
+        <label for="banku">Banku</label>
+        <input type="checkbox" name="banku" id="banku">
+        <label for="fufu">fufu</label>
+        <input type="checkbox" name="fufu" id="fufu">
+        <br><br>
+
+        <p>(f)What will you like to drink</p>
+        <label for="sobolo">Sobolo</label>
+        <input type="radio" name="drink" id="sobolo" value="Sobolo">
+        <label for="asana">Asana</label>
+        <input type="radio" name="drink" id="asana" value="Asana">
+        <label for="coke">Coke</label>
+        <input type="radio" name="drink" id="coke" value="Coke">
+        <br><br>
+
+        <label for="eat">(g)What will you like to take home</label>
+        <select name="eat" id="eat">
+            <option value="Choose one">Choose one</option>
+            <option value="Fried Rice">Fried Rice</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Chicken Wngs">Chicken Wngs</option>
+        </select><br><br>
+
+        <label for="loc">(h)Where do you stay</label>
+        <input type="text" name="location" id="loc" list="locs">
+        <datalist id="locs">
+            <option value="Accra">Accra</option>
+            <option value="Kumasi">Kumasi</option>
+            <option value="Takoradi">Takoradi</option>
+        </datalist><br><br>
+
+        <textarea name="comment" id="Message" cols="30" rows="5" placeholder="Any comments can be typed here"></textarea>
+        <br><br>
+        <label for="">Click here to submit</label>
+        <input type="submit" value="Send">
+    </main>
+</form>
+</body>
+</html>
